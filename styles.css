@@ -1,0 +1,440 @@
+/* Advertisement Container Style */
+    .advertisement-container {
+      width: 100%; /* Sesuaikan dengan lebar yang diinginkan */
+      height: 200px;
+      overflow-x: hidden; /* Menggulirkan secara horizontal */
+      white-space: nowrap;
+    }
+
+    .advertisement img {
+        display: inline-block;
+        width: calc(100% / 6); /* Setiap gambar selebar 1/18 dari wadah */
+        height: auto;
+        animation: slide 10s linear infinite;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+  .advertisement-container {
+    width: 100%; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 200px;
+    overflow-x: hidden; /* Menggulirkan secara horizontal */
+    white-space: nowrap;
+}
+
+.advertisement img {
+    display: inline-block;
+    width: calc(100% / 6); /* Setiap gambar selebar 1/18 dari wadah */
+    height: auto;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.cta-button {
+    background-color: black;  /* Latar belakang hitam */
+    color: white;  /* Teks putih */
+    border: 2px solid black;  /* Border hitam */
+    padding: 10px 20px;  /* Padding agar tombol lebih besar */
+    text-align: center;  /* Teks di tengah */
+    text-decoration: none;  /* Menghilangkan garis bawah */
+    border-radius: 5px;  /* Membuat sudut tombol membulat */
+    display: inline-block;  /* Agar tombol berdampingan dengan elemen lain */
+    font-size: 16px;  /* Ukuran font */
+    margin-bottom: 15px;  /* Jarak bawah untuk tombol pertama */
+}
+
+.cta-button:nth-child(2) {
+    margin-top: 15px; /* Jarak atas untuk tombol kedua */
+}
+
+.cta-button:hover {
+    background-color: #333;  /* Mengubah latar belakang saat hover */
+    color: white;  /* Warna teks tetap putih */
+}
+
+    #featured-products h2 {
+      text-align: center;  /* Menempatkan teks di tengah */
+      font-size: 2rem;     /* Ukuran font sedang, bisa disesuaikan */
+      font-weight: bold;   /* Membuat teks tebal */
+      <h2><br>Produk Monitor<br></h2>
+      margin-top: 20px;    /* Menambahkan ruang di atas judul */
+      margin-bottom: 20px; /* Menambahkan ruang di bawah judul */
+  }
+
+  .contact-info {
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: space-between; /* Memberikan jarak antar elemen */
+    flex-wrap: wrap; /* Membungkus elemen jika layar kecil */
+  }
+  
+  .contact-item {
+    flex: 1; /* Membuat elemen fleksibel */
+    min-width: 250px; /* Mengatur lebar minimal elemen */
+    margin: 10px; /* Memberikan jarak antar elemen */
+  }
+  
+  /* Ubah warna link */
+  a {
+    color: #007bff; /* Warna biru */
+    text-decoration: none; /* Hilangkan garis bawah pada link */
+  }
+  
+  a:hover {
+    color: #0056b3; /* Warna biru lebih gelap saat hover */
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+/* Reset dan dasar styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: url('bg.webp') no-repeat center center/cover;
+  color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+header {
+  background: url('bg.webp') no-repeat center center/cover;
+  color: rgb(246, 248, 248);
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(248, 237, 237);
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #f8f4f3;
+}
+
+/* Hero Section */
+.hero {
+  background: url('banner.webp') no-repeat center center/cover;
+  color: rgb(247, 236, 236);
+  text-align: center;
+  padding: 100px 0;
+  
+  /* Menambahkan bayangan pada teks */
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero .cta-button {
+  background-color: #bd1702;
+  color: rgb(245, 242, 242);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+  background-color: #c0392b;
+}
+
+/* Section Info Produk */
+.info-products {
+  background: url('bg.webp') no-repeat center center/cover;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.info-products h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.info-products p {
+  font-size: 1.1em;
+  color: #fdfbfb;
+}
+
+/* Section Produk */
+.products {
+  background: url('bg.webp') no-repeat center center/cover;
+  padding: 50px 0;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: rgb(248, 243, 243);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  font-size: 1.6em;
+  color: #050404;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 1.2em;
+  color: #c01212;
+  margin-bottom: 20px;
+}
+
+.product-card .cta-button {
+  background-color: #091316;
+  color: #131718(248, 244, 244);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.product-card .cta-button:hover {
+  background-color: white;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Alamat */
+.address {
+  background: url('bg.webp') no-repeat center center/cover;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.address h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.address p {
+  font-size: 1.2em;
+  color: #fffbfb;
+}
+
+.address iframe {
+  width: 50%;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* Section Kontak */
+.contact {
+  background: url('bg.webp') no-repeat center center/cover;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  color: #faf8f8;
+}
+
+/* Section Email */
+.email {
+  background: url('bg.webp') no-repeat center center/cover;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.email h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.email input {
+  padding: 10px;
+  font-size: 1.1em;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.email button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.email button:hover {
+  background-color: #c0392b;
+}
+
+/* Footer Section */
+footer {
+  background-color: #fffdfd;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .product-card h3 {
+    font-size: 1.4em;
+  }
+
+  .product-card p {
+    font-size: 1em;
+  }
+
+  .product-card .cta-button {
+    font-size: 1em;
+  }
+  
+  .social-icons a {
+    margin: 0 10px; /* Memberikan jarak antar ikon */
+  }
+  
+  .social-icons a img {
+    transition: transform 0.3s ease; /* Efek saat hover */
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.1); /* Membesarkan ikon saat hover */
+  }
+}
+    <style>
+      .social-links {
+        margin-top: 20px;
+      }
+    
+      .social-icons {
+        display: flex; /* Menggunakan Flexbox untuk menata ikon secara horizontal */
+        gap: 15px; /* Memberikan jarak antar ikon */
+        justify-content: center; /* Menyusun ikon di tengah */
+      }
+    
+      .social-icon img {
+        width: 30px; /* Ukuran ikon */
+        height: auto; /* Menjaga proporsi gambar */
+      }
+    </style>
+    <style>
+      .social-links {
+        margin-top: 20px;
+      }
+    
+      .social-icons {
+        display: flex; /* Menggunakan Flexbox untuk menata ikon secara horizontal */
+        gap: 15px; /* Memberikan jarak antar ikon */
+        justify-content: center; /* Menyusun ikon di tengah */
+      }
+    
+      .social-icon img {
+        width: 30px; /* Ukuran ikon */
+        height: auto; /* Menjaga proporsi gambar */
+      }
+    </style>
+  </div>
+</section>
